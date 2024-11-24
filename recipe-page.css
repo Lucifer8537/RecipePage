@@ -7,3 +7,149 @@
  font-family: 'Outfit';
  src: url('./assets/fonts/outfit/Outfit-VariableFont_wght.ttf');
 }
+
+body {
+ margin: 0px;
+}
+
+.recipe-page-container {
+ background-color: hsl(30, 54%, 90%);
+ display: grid;
+ justify-content: center;
+ padding: 6em 0em;
+}
+
+.recipe-container {
+ background-color: white;
+ padding: 2em;
+ border-radius: 25px;
+ max-width: 40em;
+ font-family: 'Outfit';
+ font-size: 16px;
+}
+
+img {
+ max-width: 100%;
+ border-radius: 10px;
+}
+
+.recipe-heading {
+ font-family: 'YoungSerif';
+ font-size: 2.5em;
+ font-weight: 100;
+}
+
+.recipe-info {
+ font-family: 'Outfit';
+ color: hsl(30, 10%, 34%);
+}
+
+.preparation-info-container {
+ background-color: hsl(330, 100%, 98%);
+ padding: 1em 1.7em;
+ margin: 2em 0em;
+ border-radius: 15px;
+}
+
+.preparation-heading {
+ color: hsl(332, 51%, 32%);
+ margin: 0;
+ font-size: 20px;
+}
+
+.preparation-list {
+ color: hsl(30, 10%, 34%);
+ padding: 0 0 0 1.7em;
+ gap: 10px;
+ display: grid;
+}
+
+.preparation-list li {
+ padding-left: 1em;
+}
+
+.preparation-list li::marker {
+ color: hsl(332, 51%, 32%);
+}
+
+.generic-heading {
+ font-family: 'YoungSerif';
+ font-size: 2em;
+ font-weight: 100;
+ color: hsl(14, 45%, 36%);
+}
+
+.ingredients-list li::marker {
+ color: hsl(14, 45%, 36%);
+}
+
+.ingredients-list {
+ color: hsl(30, 10%, 34%);
+ padding: 0 0 0 1.7em;
+ gap: 15px;
+ display: grid;
+}
+
+.ingredients-list li {
+ padding-left: 1em;
+}
+
+hr {
+ opacity: 0.3;
+ margin: 2.5em 0em;
+}
+
+.instructions-list {
+ color: hsl(30, 10%, 34%);
+ padding: 0 0 0 1.4em;
+ gap: 15px;
+ display: grid;
+}
+
+.instructions-list li::marker {
+ color: hsl(14, 45%, 36%);
+ font-weight: bold;
+}
+
+.instructions-list li {
+ padding-left: 1.5em;
+}
+
+.nutrition-info{
+ color: hsl(30, 10%, 34%);
+}
+
+.nutrition-table {
+ display: grid;
+ grid-template-columns: auto auto;
+ margin: 1em 0;
+}
+
+.bottom {
+ padding-bottom: 10px;
+ border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.ing{
+ padding-left: 2em;
+ padding-top: 10px;
+}
+
+.value {
+ color: hsl(14, 45%, 36%);
+ font-weight: bold;
+ padding-top: 10px;
+}
+
+@media (max-width: 500px) {
+.recipe-page-container {
+ padding: 0; 
+}
+.recipe-container {
+ border-radius: 0;
+ padding: 0;
+}
+.info-container {
+ padding: 0em 2em 2em 2em;
+}
+}
